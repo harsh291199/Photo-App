@@ -12,7 +12,7 @@ ActionMailer::Base.perform_deliveries = true
 ActionMailer::Base.smtp_settings = {
   address: 'smtp.gmail.com',
   port: '465',
-  authentication 'plain',
+  authentication: 'plain',
   user_name: ENV["MAILER_EMAIL"],
   password: ENV["MAILER_PASSWORD"],
   :ssl => true,
